@@ -39,7 +39,6 @@
       <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
       <x:String>System.ComponentModel</x:String>
       <x:String>System.Linq.Expressions</x:String>
-      <x:String>System.Reflection</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -93,25 +92,6 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
-      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
-      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
-      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
-      <AssemblyReference>System.Linq.Async</AssemblyReference>
-      <AssemblyReference>System.Collections</AssemblyReference>
-      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-    </sco:Collection>
-  </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,1424.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="ui:UiElement" Name="outputElement_3">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:String x:Key="SourceIdRef">NClick_1</x:String>
-            <x:String x:Key="SourcePropertyName">OutUiElement</x:String>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </Variable>
-    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -161,7 +141,6 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log In'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" OutUiElement="[outputElement_3]" Version="V4">
               <uix:NClick.Target>
                 <uix:TargetAnchorable ContentHash="BOZpr90IWU6FDFjWDjMJ-g" DesignTimeRectangle="123, 239, 94, 25" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Log In' role='push button' automationid='' check:text='Log In' /&gt;" Guid="c95520bf-4a51-4b9a-a2c1-d81a60dfd036" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGIAAAAdCAYAAABR0bkaAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFqSURBVGhD7ZpBqoMwEIaDeB83XsaVV/AGwsN7WOoxBM/gWvQs80yMGuNoaWniWGbgg5oxtvxfjVkogItEsQgitYjIsoy5gLk2Itq2hWEYGA/IrA9FYBMYd7AIIrAIIrAIIrAIIrAIIlwsooMyCSAuGqTniL6GPAohrZDehbAIIrAIIhAX0UOdRyCE0CDnqmCN/t/jPGhbRFdCIsbjp3kd/6IIi5A9AUFcQDOPqdCM87WEMK30nFncuyLG8IMYikaO6WuEKVT2XIeQFdHXOURLOCtdmSxy5OddYK+WHlSE9RvkGPLdLiErAg15RAlS49M/d3PHSD4SYZ2PjTmGtIhdyCO2iHVZ0rCIT3CwNL0KkUVgHIuYetjD2g7RnD/Nef9hzSJ0cFvW8O0+Eo4KzeirbehJiCzCEzJEzzueb/BjIpDl7CbcW8RmWZrY7aJuwo/dEfflUAS/xeGP07c4GP/MtYjgurZYBIkC+AcsPl1uwnLsXQAAAABJRU5ErkJggg==" InformativeScreenshot="b6374622be9776dfedc16c5d5f380131.png" Reference="-0qOmXhA6Ey3oIyzzSYcNg/xVGNG-Uv00CNrKIRQ9VWgg" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UiDemo' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -182,7 +161,6 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="353.6,168.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Successfully logged into the UiDemo application at: &quot; + DateTime.Now.ToString(&quot;MM/dd/yy hh:mm tt&quot;)]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
